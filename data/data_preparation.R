@@ -1,0 +1,12 @@
+a1<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2009.dat", header = FALSE, sep="")
+a2<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2010.dat", header = FALSE, sep="")
+a3<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2011.dat", header = FALSE, sep="")
+a4<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2012.dat", header = FALSE, sep="")
+a5<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2013.dat", header = FALSE, sep="")
+a6<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2014.dat", header = FALSE, sep="")
+a7<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2015.dat", header = FALSE, sep="")
+a8<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2016.dat", header = FALSE, sep="")
+a9<-read.csv("/home/alex/Desktop/telelis/data/meteo-data/athens-gazi-2017.dat", header = FALSE, sep="")
+
+df=as.data.frame(rbind(a1,a2,a3,a4,a5,a6,a7,a8,a9))
+write.csv(df,"/home/alex/Desktop/meteo.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
